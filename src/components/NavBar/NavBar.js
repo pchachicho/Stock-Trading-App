@@ -38,17 +38,17 @@ function NavBar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/National" className="nav-links" onClick={closeMobileMenu}>
-              National
+            <Link to="/Portfolio" className="nav-links" onClick={closeMobileMenu}>
+              Portfolio
             </Link>
           </li>
           <li className="nav-item">
             <Link
-              to="/Countries"
+              to="/About"
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Countries
+              About
             </Link>
           </li>
         </ul>
