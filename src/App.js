@@ -5,6 +5,7 @@ import {Auth} from "./components/auth.js"
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import LogIn from './components/LogIn/LogIn';
+import Account from './components/Account/Account';
 function App() {
   return (
     <div>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/login" component={LogIn} />
         <Route path="/Portfolio" component={Portfolio} />
+        <Route path="/Account" component={Account} />
       </Routes>
     </Router>
     <Auth />
