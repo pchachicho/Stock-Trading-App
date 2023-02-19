@@ -1,10 +1,26 @@
-import { auth } from "../config/firebase.js"
+import { auth } from "../config/firebase.js";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useState } from "react";
+
 export const Auth = () => {
-    return (
-        <div>
-            <input placeholder="Email..."/>
-            <input placeholder="Password..." />
-            <button>Sign In</button>
-        </div>
-    )
-}
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const signIn = async () => {
+    await createUserWithEmailAndPassword(auth, email, password)
+  };
+
+  return (
+    <div>
+      <input
+        placeholder="Email..."
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <input
+        placeholder="Password..."
+        type="password"
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <button onClick={signIn}>Sign In</button>
+    </div>
+  );
+};
