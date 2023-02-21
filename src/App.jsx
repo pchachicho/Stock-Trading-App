@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar/NavBar";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Auth } from "./components/auth.js";
+import { Auth } from "./components/auth.jsx";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
 import LogIn from "./components/LogIn/LogIn";
