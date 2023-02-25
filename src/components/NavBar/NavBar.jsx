@@ -25,7 +25,7 @@ function NavBar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span style={{ fontWeight: 'bold' }}>Stocks</span>
+          <span style={{ fontWeight: 'bold' }}>Invesitre</span>
           {/* <img src={food} className="food" alt="food" /> */}
         </Link>
         <div className="menu-icon" onClick={handleClick}>
