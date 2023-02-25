@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(219, 24, 24) 0%, rgb(26, 23, 23) 100%);
+    background: linear-gradient(120deg, rgb(133, 50, 168) 20%, rgb(26, 23, 23) 40%);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -53,9 +53,6 @@
   
   .nav-links {
     color: white;
-    /*display: flex;*/
-    /*display: block;*/
-    /*border: 2px solid grey;*/
     padding: 5px;
     text-decoration: none;
     display: inline-block;
@@ -64,13 +61,20 @@
     margin-right: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: x-large;
+    z-index: 1;
   }
-  
+  nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
   .nav-links:hover {
-    border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
+  color: rgb(164, 72, 204);
+    
   }
-  
   .fa-bars {
     color: #fff;
   }
