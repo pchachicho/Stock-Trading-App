@@ -32,7 +32,7 @@ export const Auth = () => {
     }
   };
   return (
-    <div>
+    <div className="container">
       <input
         placeholder="Email..."
         onChange={(e) => setEmail(e.target.value)}
@@ -45,7 +45,7 @@ export const Auth = () => {
       <button onClick={signIn}>Sign In</button>
 
       <button onClick={signInWithGoogle}>Sign In With Google</button>
-      <button onClick={logout}>Logout</button> 
+      <button onClick={logout}>Logout</button>
       {/* make sure to add redirect page after logging out */}
     </div>
   );
