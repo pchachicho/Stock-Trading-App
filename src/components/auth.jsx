@@ -5,6 +5,7 @@ import {
   signOut,
 } from "firebase/auth";
 import { useState } from "react";
+import GoogleButton from "react-google-button"
 
 export const Auth = () => {
   const [email, setEmail] = useState("");
@@ -43,8 +44,7 @@ export const Auth = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button onClick={signIn}>Sign In</button>
-
-      <button onClick={signInWithGoogle}>Sign In With Google</button>
+      <GoogleButton type="dark" className="google" onClick={signInWithGoogle}>Sign In With Google</GoogleButton>
       <button onClick={logout}>Logout</button>
       {/* make sure to add redirect page after logging out */}
     </div>
