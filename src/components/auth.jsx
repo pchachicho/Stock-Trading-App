@@ -46,7 +46,7 @@ export const Auth = () => {
 
       <button onClick={signInWithGoogle}>Sign In With Google</button>
       <button onClick={logout}>Logout</button> 
-      {/* make sure to add redirect page after logging out */}
+      {/* make sure to add redirect page after loc gging out */}
     </div>
   );
 };
