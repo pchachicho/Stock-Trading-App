@@ -31,8 +31,8 @@ export default function Stock() {
       function createWidget() {
         if (document.getElementById('tradingview_63d45') && 'TradingView' in window) {
           new window.TradingView.widget({
-            width: 980,
-            height: 510,
+            width: 1000,
+            height: 610,
             symbol: "NASDAQ:TSLA",
             timezone: "America/New_York",
             theme: "dark",

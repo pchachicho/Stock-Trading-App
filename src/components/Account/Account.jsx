@@ -2,6 +2,7 @@ import React from "react";
 import { db } from "../../config/firebase";
 import { useState, useEffect } from "react";
 import { getDocs, collection, addDoc } from "firebase/firestore";
+import "../Account/Account.css"
 
 function Account() {
   const [stockList, setStockList] = useState([]);
@@ -43,29 +44,29 @@ function Account() {
   };
   return (
     <div>
-      <div>
-        <input
+      <div className="account-container">
+        <input className="ticker"
           placeholder="Stock Ticker..."
           onChange={(e) => setNewStockTicker(e.target.value)}
         />
-        <input
+        <input className="ticker"
           placeholder="Stock Price..."
           type="number"
           onChange={(e) => setNewStockPrice(Number(e.target.value))}
         />
-        <input
+        <input className="sell-stock"
           type="radio"
           name="radio"
           onChange={(e) => setNewStockSell(e.target.checked)}
         />
         <label>Sell Stock </label>
-        <input
+        <input className="buy-stock"
           type="radio"
           name="radio"
           onChange={(e) => setNewStockBuy(e.target.checked)}
         />
         <label>Buy Stock </label>
-        <button type="button" onClick={onSubmitStock}>
+        <button className="submit" type="button" onClick={onSubmitStock}>
           Submit
         </button>
       </div>
