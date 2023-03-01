@@ -1,10 +1,11 @@
 import React from "react";
 import { Auth } from "../auth";
+import "./login.css"
 function LogIn() {
   return (
     <div>
-     <Auth />
-     
+      <Auth />
+
       {/* make sure to add redirect page after logging out */}
     </div>
   );

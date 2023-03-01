@@ -24,9 +24,14 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
+<<<<<<< HEAD
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <span style={{ fontWeight: 'bold' }}>Invesitre</span>
+=======
         <Link to="/" className="navbar-logo">
           <span style={{ fontWeight: 'bold' }}>Invesitre</span>
           {/* <img src={food} className="food" alt="food" /> */}
+>>>>>>> cdc27c155101939ee267a4e2a1b8131c3b1d509a
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -61,7 +66,7 @@ function NavBar() {
             </Link>
           </li>
         </ul>
-       {/* {button && <Button buttonStyle="btn--outline">About</Button>} */}
+        {/* {button && <Button buttonStyle="btn--outline">About</Button>} */}
       </div>
     </nav>
   );
