@@ -1,11 +1,11 @@
 // TradingViewWidget.jsx
 
 import React, { useEffect, useRef } from 'react';
-import "./Portfolio.css"
+import "./stocks.css"
 
 let tvScriptLoadingPromise;
 
-export default function Portfolio() {
+export default function Stock() {
   const onLoadScriptRef = useRef();
 
   useEffect(
@@ -55,6 +55,7 @@ export default function Portfolio() {
     },
     []
   );
+
 
   return (
     <div className='tradingview-widget-container'>
