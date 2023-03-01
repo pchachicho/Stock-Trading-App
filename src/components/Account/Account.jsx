@@ -65,7 +65,9 @@ function Account() {
           onChange={(e) => setNewStockBuy(e.target.checked)}
         />
         <label>Buy Stock </label>
-        <button type="button" onClick={onSubmitStock}>Submit</button>
+        <button type="button" onClick={onSubmitStock}>
+          Submit
+        </button>
       </div>
       <div>
         {stockList.map((stock) => (
