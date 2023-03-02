@@ -1,7 +1,7 @@
 import React from "react";
 import { db } from "../../config/firebase";
 import { useState, useEffect } from "react";
-import { getDocs, collection, addDoc } from "firebase/firestore";
+import { getDocs, collection, addDoc, deleteDoc } from "firebase/firestore";
 import "../Account/Account.css"
 
 function Account() {
@@ -28,7 +28,7 @@ function Account() {
         console.error(err);
       }
     };
-    getStockList();
+    setTimeout(getStockList(), 1000);
   });
   const onSubmitStock = async () => {
     try {
@@ -42,6 +42,11 @@ function Account() {
       console.error(err);
     }
   };
+  const deleteStock = async () => {
+    const stockDoc = doc(db,"Stocks",)
+    await deleteDoc();
+
+  }
   return (
     <div>
       <div className="account-container">
@@ -73,8 +78,11 @@ function Account() {
       <div>
         {stockList.map((stock) => (
           <div>
+            <h1 className="Sell">{stock.sell}</h1>
+            <h1 className="Buy">{stock.buy}</h1>
             <h1>{stock.ticker}</h1>
             <p>Price: {stock.price}</p>
+            <button onClick={()=> deleteStock(stock.id)}> Delete Stock</button>
           </div>
         ))}
       </div>
