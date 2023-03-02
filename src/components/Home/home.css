@@ -1,0 +1,12 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 2.2rem;
+    color: white;
+    height: 50vh;
+    width: 100%;
+}
