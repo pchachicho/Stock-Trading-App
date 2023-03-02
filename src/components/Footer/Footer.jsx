@@ -4,7 +4,7 @@ import "./Footer.css"
 function Footer() {
   return (
     <div className="footer">
-       <div className="container">
+       <div className="container2">
         <div className="row">
           {/* Column1 */}
           <div className="col-left">
