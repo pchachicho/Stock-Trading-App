@@ -24,9 +24,8 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <span style={{ fontWeight: 'bold' }}>Invesitre</span>
-          {/* <img src={food} className="food" alt="food" /> */}
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -38,8 +37,8 @@ function NavBar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/portfolio" className="nav-links" onClick={closeMobileMenu}>
-              Portfolio
+            <Link to="/stocks" className="nav-links" onClick={closeMobileMenu}>
+              Stocks
             </Link>
           </li>
           <li className="nav-item">
@@ -61,7 +60,7 @@ function NavBar() {
             </Link>
           </li>
         </ul>
-       {/* {button && <Button buttonStyle="btn--outline">About</Button>} */}
+        {/* {button && <Button buttonStyle="btn--outline">About</Button>} */}
       </div>
     </nav>
   );
