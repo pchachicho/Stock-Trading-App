@@ -5,9 +5,11 @@ import "./About.css";
 // import GithubIcon from "@mui/icons-material/GitHub";
 
 const slides = [
-  { url: "http://localhost:3000/Cassandra.jpg", title: "Cassandra" },
-  { url: "http://localhost:3000/Patrick.jpg", title: "Patrick" },
-  { url: "http://localhost:3000/franklin.JPG", title: "Franklin" },
+  { url: "http://via.placeholder.com/640x360", title: "Cassandra" },
+  { url: "https://dummyimage.com/640x360/fff/aaa", title: "Connor" },
+  { url: "http://via.placeholder.com/640x360", title: "Jonovan" },
+  { url: "http://via.placeholder.com/640x360", title: "Patrick" },
+  
 ];
 const containerStyles = {
   width: "300px",
@@ -18,7 +20,7 @@ function About() {
   return (
     <body className="aboutBody">
     <div className="idk">
-      <h1 className="title">Meet The People Behind TATW</h1>
+      <h1 className="title">Meet The People Behind Invesitre</h1>
       <div style={containerStyles} className="ImageSlider">
         <ImageSlider slides={slides} />
       </div>
