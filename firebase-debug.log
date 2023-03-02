@@ -1,0 +1,52 @@
+[debug] [2023-02-26T17:22:52.539Z] ----------------------------------------------------------------------
+[debug] [2023-02-26T17:22:52.540Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hachi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-02-26T17:22:52.541Z] CLI Version:   11.23.1
+[debug] [2023-02-26T17:22:52.541Z] Platform:      win32
+[debug] [2023-02-26T17:22:52.541Z] Node Version:  v16.15.0
+[debug] [2023-02-26T17:22:52.546Z] Time:          Sun Feb 26 2023 12:22:52 GMT-0500 (Eastern Standard Time)
+[debug] [2023-02-26T17:22:52.546Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-26T17:22:52.549Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-02-26T17:22:52.620Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-26T17:22:52.620Z] > authorizing via signed-in user (msp3ncstate@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\hachi\Desktop\Codemode\Stock-Trading-App
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2023-02-26T17:22:52.726Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-02-26T17:22:52.727Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-02-26T17:23:11.484Z] Using project from CLI flag: stocktradingapp-65dbe
+[debug] [2023-02-26T17:23:11.485Z] > refreshing access token with scopes: []
+[debug] [2023-02-26T17:23:11.486Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-02-26T17:23:11.486Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-26T17:23:11.601Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-02-26T17:23:11.601Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-26T17:23:11.612Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/stocktradingapp-65dbe [none]
+[debug] [2023-02-26T17:23:11.875Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/stocktradingapp-65dbe 200
+[debug] [2023-02-26T17:23:11.875Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/stocktradingapp-65dbe {"projectId":"stocktradingapp-65dbe","projectNumber":"404695737169","displayName":"StockTradingApp","name":"projects/stocktradingapp-65dbe","resources":{"hostingSite":"stocktradingapp-65dbe"},"state":"ACTIVE","etag":"1_057c4aa2-864c-40d4-9d4e-c10179695825"}
+[info] i  Using project stocktradingapp-65dbe (StockTradingApp) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

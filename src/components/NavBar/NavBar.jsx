@@ -37,8 +37,8 @@ function NavBar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/portfolio" className="nav-links" onClick={closeMobileMenu}>
-              Portfolio
+            <Link to="/stocks" className="nav-links" onClick={closeMobileMenu}>
+              Stocks
             </Link>
           </li>
           <li className="nav-item">
