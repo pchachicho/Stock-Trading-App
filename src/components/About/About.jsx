@@ -13,7 +13,7 @@ const slides = [
 ];
 const containerStyles = {
   width: "300px",
-  height: "400px",
+  height: "320px",
   margin: "0 auto",
 };
 function About() {
@@ -64,7 +64,6 @@ function About() {
               {/* <GithubIcon />{" "} */}
             </a>
           </div>
-          </div>
           <div className="row">
           <div className="column">
             <h2>Patrick</h2>
@@ -77,6 +76,7 @@ function About() {
               {" "}
               {/* <GithubIcon />{" "} */}
             </a>
+          </div>
           </div>
           </div>
           </div>
