@@ -1,8 +1,8 @@
 import React from "react";
 import { db } from "../../config/firebase";
 import { useState, useEffect } from "react";
-import { getDocs, collection, addDoc, deleteDoc } from "firebase/firestore";
-import "../Account/Account.css"
+import { getDocs, collection, addDoc, deleteDoc, updateDoc } from "firebase/firestore";
+import "../Account/Account.css";
 
 function Account() {
   const [stockList, setStockList] = useState([]);
@@ -11,7 +11,8 @@ function Account() {
   const [newStockPrice, setNewStockPrice] = useState(0);
   const [newStockSell, setNewStockSell] = useState(false);
   const [newStockBuy, setNewStockBuy] = useState(false);
-
+// Update Title State
+const [updatedPrice, setUpdatedPrice] = useState(0)
   const stockCollectionRef = collection(db, "Stocks");
   useEffect(() => {
     const getStockList = async () => {
@@ -28,7 +29,7 @@ function Account() {
         console.error(err);
       }
     };
-    setTimeout(getStockList(), 1000);
+    getStockList();
   });
   const onSubmitStock = async () => {
     try {
@@ -42,30 +43,37 @@ function Account() {
       console.error(err);
     }
   };
-  const deleteStock = async () => {
-    const stockDoc = doc(db,"Stocks",)
-    await deleteDoc();
-
+  const deleteStock = async (id) => {
+    const stockDoc = doc(db, "Stocks", id);
+    await deleteDoc(stockDoc);
+  };
+  const updateStockPrice = async (id) => {
+    const stockDoc = doc(db, "Stocks", id)
+    await updateDoc(stockDoc, { price: updatedPrice})
   }
   return (
     <div>
       <div className="account-container">
-        <input className="ticker"
+        <input
+          className="ticker"
           placeholder="Stock Ticker..."
           onChange={(e) => setNewStockTicker(e.target.value)}
         />
-        <input className="ticker"
+        <input
+          className="ticker"
           placeholder="Stock Price..."
           type="number"
           onChange={(e) => setNewStockPrice(Number(e.target.value))}
         />
-        <input className="sell-stock"
+        <input
+          className="sell-stock"
           type="radio"
           name="radio"
           onChange={(e) => setNewStockSell(e.target.checked)}
         />
         <label>Sell Stock </label>
-        <input className="buy-stock"
+        <input
+          className="buy-stock"
           type="radio"
           name="radio"
           onChange={(e) => setNewStockBuy(e.target.checked)}
@@ -82,7 +90,11 @@ function Account() {
             <h1 className="Buy">{stock.buy}</h1>
             <h1>{stock.ticker}</h1>
             <p>Price: {stock.price}</p>
-            <button className="delete" onClick={()=> deleteStock(stock.id)}> Delete Stock</button>
+            <button className="delete" onClick={() => deleteStock(stock.id)}>
+              Delete Stock
+            </button>
+            <input placeholder="New stock price" onChange={(e) => setUpdatedPrice(e.target.value)}></input>
+            <button onClick={()=> updateStockPrice(stock.id)}>Update Price</button>
           </div>
         ))}
       </div>
