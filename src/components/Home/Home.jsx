@@ -5,9 +5,12 @@ import "../Home/home.css"
 function Home() {
     return (
         <div className='home-container'>
-            Look for what stocks you want to buy or sell
-            <br />
-            and take note of them on our account page
+            <blockquote>
+  "This is the quote text. It should be enclosed in quotation marks."
+  <cite>Author's Name</cite>
+</blockquote>
+
+            
         </div>
     )
 }
