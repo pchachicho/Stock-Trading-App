@@ -82,7 +82,7 @@ function Account() {
             <h1 className="Buy">{stock.buy}</h1>
             <h1>{stock.ticker}</h1>
             <p>Price: {stock.price}</p>
-            <button onClick={()=> deleteStock(stock.id)}> Delete Stock</button>
+            <button className="delete" onClick={()=> deleteStock(stock.id)}> Delete Stock</button>
           </div>
         ))}
       </div>

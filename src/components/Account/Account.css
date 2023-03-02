@@ -29,3 +29,15 @@
     background-color: green;
     color: white
 }
+.delete {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color:  darkred;
+    color: white;
+    margin: .5rem;
+}
+
+.delete:hover {
+    background-color: red;
+    color: white
+}
