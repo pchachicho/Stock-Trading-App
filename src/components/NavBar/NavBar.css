@@ -30,6 +30,11 @@
   align-items: center;
 }
 
+.Ilogo{
+  width: 20%;
+  height: 20%;
+  justify-content: left;
+}
 .fa-typo3 {
   margin-left: 0.5rem;
   font-size: 1.8rem;

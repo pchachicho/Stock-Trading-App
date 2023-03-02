@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import logo from '../Home/invesitre.png'
 // import { Button } from "./Button";
 // import food from './photo/Plate.png'
 
@@ -25,6 +26,7 @@ function NavBar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img src={logo} alt="Logo" className="Ilogo"/>
           <span style={{ fontWeight: 'bold' }}>Invesitre</span>
         </Link>
         <div className="menu-icon" onClick={handleClick}>
