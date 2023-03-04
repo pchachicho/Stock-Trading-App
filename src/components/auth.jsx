@@ -33,19 +33,19 @@ export const Auth = () => {
     }
   };
   return (
-    <div className="container">
-      <input
+    <div className="container-alt">
+      <input className="input-alt"
         placeholder="Email..."
         onChange={(e) => setEmail(e.target.value)}
       />
-      <input
+      <input className="input-alt"
         placeholder="Password..."
         type="password"
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={signIn}>Sign In</button>
+      <button className="button-alt" onClick={signIn}>Sign In</button>
       <GoogleButton type="dark" className="google" onClick={signInWithGoogle}>Sign In With Google</GoogleButton>
-      <button onClick={logout}>Logout</button>
+      <button className="button-alt" onClick={logout}>Logout</button>
       {/* make sure to add redirect page after logging out */}
     </div>
   );

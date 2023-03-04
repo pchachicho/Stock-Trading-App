@@ -1,10 +1,8 @@
-.footer {
+ .footer {
   color: white;
   background: black;
-  position: bottom fixed;
-  bottom: 0;
-  width: 100%;
-}
+  
+} 
 .list-unstyled {
   list-style: none;
   font-size: 17px;
@@ -36,3 +34,7 @@ h2{
 li{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@media screen and (max-width: 960px) {
+  .Footer {
+    position: absolute;
+  }}
