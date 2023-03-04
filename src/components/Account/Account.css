@@ -7,14 +7,19 @@
 
 .ticker {
     margin: .5rem;
+    padding: 10px;
 }
 
 .sell-stock {
     margin: .5rem;
+    
 }
 
 .buy-stock {
     margin: 1rem;
+}
+label{
+    color: white;
 }
 
 .submit {
@@ -23,6 +28,7 @@
     background-color: darkgreen;
     color: white;
     margin: .5rem;
+    padding: 10px;
 }
 
 .submit:hover {
