@@ -1,7 +1,7 @@
 import React from "react";
 import { db } from "../../config/firebase";
 import { useState, useEffect } from "react";
-import { getDocs, collection, addDoc, deleteDoc, updateDoc } from "firebase/firestore";
+import { getDocs, collection, addDoc, deleteDoc, updateDoc, doc } from "firebase/firestore";
 import "../Account/Account.css";
 
 function Account() {
