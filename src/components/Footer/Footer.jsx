@@ -4,7 +4,7 @@ import "./Footer.css"
 function Footer() {
   return (
     <div className="footer">
-       <div className="container2">
+       <div className="container2 fixed-bottom  bg-black" style={{height:"278.9px"}}>
         <div className="row">
           {/* Column1 */}
           <div className="col-left">
@@ -21,18 +21,24 @@ function Footer() {
               <li>Login</li>
               <li>About</li>
               <li>Account</li>
-              <li>Portfolio</li>
+              <li>Stocks</li>
             </ui>
           </div>
         </div>
         </div>
-        <hr />
-        <div className="row">
+            <div className="row fixed-bottom ">
           <p className="col-sm">
             &copy;{new Date().getFullYear()} INVESITRE | All rights reserved |
             Terms Of Service | Privacy
           </p>
         </div>
+        
+        {/* <div className="row fixed">
+          <p className="col-sm">
+            &copy;{new Date().getFullYear()} INVESITRE | All rights reserved |
+            Terms Of Service | Privacy
+          </p>
+        </div> */}
       </div>
   );
 }

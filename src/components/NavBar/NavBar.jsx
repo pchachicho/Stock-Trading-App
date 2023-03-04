@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import logo from '../Home/invesitre.png'
+//import { bold } from "colorette";
 // import { Button } from "./Button";
 // import food from './photo/Plate.png'
 
@@ -25,10 +26,14 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
+        <div>
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img src={logo} alt="Logo" className="Ilogo"/>
-          <span style={{ fontWeight: 'bold' }}>Invesitre</span>
+        <img src={logo} position= 'fixed-left' width="100" alt="" class="d-inline-block fixed-left"></img>
+
+          <span class="text-uppercase font-weight-bold">Invesitre</span>
+          <span style={{ fontWeight: 'bold' }}></span>  
         </Link>
+        </div>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>

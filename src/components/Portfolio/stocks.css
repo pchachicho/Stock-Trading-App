@@ -1,5 +1,10 @@
 .tradingview-widget-container {
-    margin-top: 1rem;
+    position:absolute;
+    margin-top:10px; 
+    /* bottom: -15px; */
+    left:0; 
+    right:0; 
+    overflow:auto; 
 }
 
 body {

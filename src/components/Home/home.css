@@ -1,5 +1,5 @@
 .home-container {
-    display: flex;
+    display: fixed;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     flex-direction: column;
     justify-content: center;

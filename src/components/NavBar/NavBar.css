@@ -25,16 +25,23 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 3rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  display: flex;
-  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  display: inline-block;
+  align-items: center; 
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  margin: 0 auto;
 }
 
-.Ilogo{
-  width: 20%;
-  height: 20%;
-  justify-content: left;
-}
+/* .Invesitre{
+  position:fixed;
+  top:0;
+  left: 0;
+  height: 100px;
+  text-align:center;
+  z-index: 100;
+} */
+
 .fa-typo3 {
   margin-left: 0.5rem;
   font-size: 1.8rem;
@@ -100,6 +107,14 @@ nav ul li a:hover {
   .NavbarItems {
     position: relative;
   }
+  
+
+  /* .Ilogo{
+    width: 20%;
+    height: 20%;
+    justify-content: left;
+    display: inline;
+  } */
 
   .nav-menu {
     display: flex;
