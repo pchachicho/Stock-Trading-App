@@ -1,7 +1,7 @@
 .footer {
   color: white;
   background: black;
-  position: bottom fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }

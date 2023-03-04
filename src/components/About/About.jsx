@@ -5,11 +5,10 @@ import "./About.css";
 // import GithubIcon from "@mui/icons-material/GitHub";
 
 const slides = [
-  { url: "http://via.placeholder.com/640x360", title: "Cassandra" },
-  { url: "https://dummyimage.com/640x360/fff/aaa", title: "Connor" },
-  { url: "http://via.placeholder.com/640x360", title: "Jonovan" },
-  { url: "http://via.placeholder.com/640x360", title: "Patrick" },
-  
+  { url: "http://localhost:3000/CCPhoto.jpg", title: "Cassandra" },
+  { url: "http://localhost:3000/CEPhoto.jpg", title: "Connor" },
+  { url: "http://localhost:3000/JWPhoto.jpg", title: "Jonovan" },
+  { url: "http://localhost:3000/PHPhoto.jpg", title: "Patrick" },
 ];
 const containerStyles = {
   width: "300px",
