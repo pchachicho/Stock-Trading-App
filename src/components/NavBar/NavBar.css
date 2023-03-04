@@ -1,4 +1,5 @@
-.navbar {
+
+  .navbar {
   background: linear-gradient(120deg, rgb(133, 50, 168) 20%, rgb(26, 23, 23) 55%);
   height: 80px;
   display: flex;
@@ -17,7 +18,7 @@
   height: 80px;
   max-width: 1500px;
 }
-
+  
 .navbar-logo {
   color: #fff;
   justify-self: start;
@@ -103,19 +104,10 @@ nav ul li a:hover {
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) and (max-height:900) {
   .NavbarItems {
     position: relative;
   }
-  
-
-  /* .Ilogo{
-    width: 20%;
-    height: 20%;
-    justify-content: left;
-    display: inline;
-  } */
-
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -190,17 +182,4 @@ nav ul li a:hover {
     background: #fff;
     color: #242424;
     transition: 250ms;
-  }
-}
-
-.food {
-  width: 35px;
-  margin-left: 7px;
-}
-
-.LinkedIn svg {
-  color: white;
-  font-size: 70px;
-  margin: 20px;
-  cursor: pointer;
-}
+  }}
